@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohit Joshi Personal Website</title>
+  <link rel="shortcut icon" href="../images/logo_icon.png">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/blog.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery.slicknav.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 100%;
+      width: 100%;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      /*	border: 1px solid black*/
+    }
+    #nav_menu ul {
+      list-style: none;
+      position: relative;    /* So the first submenu can be positioned within the main menu */
+    }
+    #nav_menu ul li {
+      float: left;
+    }
+    #nav_menu ul ul {
+      display: none;         /* Don't display submenu until hover of the li element */
+      position: absolute;
+      top: 100%;             /* Position the submenu at the bottom of the main menu */
+    }
+    #nav_menu ul ul li {
+      float: none;           /* Display the submenus vertically */
+      position: relative;    /* So the second submenu can be positioned within the first submenu */
+    }
+    #nav_menu ul ul li ul {
+      position: absolute;
+      left: -100%;           /* Position the second submenu at the left side of the li element */
+      top: 0;                /* Position the second submenu at the top of the li element */
+    }
+    #nav_menu ul li:hover > ul {
+      display: block;        /* Display the submenu on hover of the li element */
+    }
+    #nav_menu ul::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    /* The styles for the formatting of the multi-tier navigation menu */
+    #nav_menu ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #nav_menu ul li {
+      width: 25%;
+    }
+    #nav_menu ul li a {
+      text-align: center;
+      display: block;
+      padding: 1em 0;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-size: 120%;
+    }
+
+    #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+      background-color: black;
+    }
+    #nav_menu ul li:hover ul {
+      width: 100%;
+    }
+    #nav_menu ul li:hover ul li a {
+      display: block;
+      width: 178px;
+      text-align: center;
+    }
+    .slicknav_menu {
+      display: none;
+    }
+    @media only screen and (max-width: 959px) {
+      #nav_menu ul li a {
+        font-size: 0.875em;                      /* 14 / 16 */
+      }
+      @media only screen and (max-width: 767px) {
+        #nav_menu {
+          display: none;
+        }
+
+        .slicknav_menu {
+          display: block;
+        }
+      }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="header">
+  <a href="../index.html"><img src="../images/logo_size_invert.jpg" alt="Mohit Joshi Logo"></a>
+</div>
+
+<nav id="mobilemenu">
+  <ul id="nav_menu">
+    <li><a>About</a>
+      <ul class="dropdown">
+        <li><a href = "../pages/about.html">About me</a></li>
+        <li><a href = "../pages/blog.html">Blog</a></li>
+      </ul>
+    </li>
+    <li><a href="../pages/achievements.html">Achievements</a>\
+      <ul class="dropdown">
+        <li><a href = "../pages/education.html">Education</a></li>
+        <li><a href = "../pages/awards.html">Awards</a></li>
+      </ul>
+    </li>
+    <li><a href="../pages/works.html">Works</a>
+      <ul class="dropdown">
+        <li><a href = "../pages/employment.html">Employment</a></li>
+        <li><a href = "../pages/arcade.html">Project1: Arcade</a></li>
+        <li><a href = "../pages/website.html">Project2: Website</a></li>
+      </ul>
+    </li>
+    <li><a href = "../pages/contact.html">Contact</a>
+      <ul class="dropdown">
+        <li><a href = "../pages/appointment.html">Schedule an Appointment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div class="blog-container">
+  <h1>Project 2: Website</h1>
+  <div class="blog">
+    <div class="blog-header" style="width: 75%;">
+      <img src="../images/jumbo.png" alt="website picture" style="width: 99%">
+    </div>
+    <div class="blog-body">
+      <p>This was a project called E-commerce website for IS 322. We were tasked to build pages using Javascript, HTML and CSS.
+        It was really fun.</p>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<footer class="navbar-fixed-bottom">
+  <div class="footer-icons">
+    <ul style="list-style-type: none;">
+      <li><a><img src="../images/facebook.png"></a></li>
+      <li><a><img src="../images/twitter.png"></a></li>
+      <li><a><img src="../images/instagram.png"></a></li>
+      <li><a><img src="../images/linkedin.png"></a></li>
+    </ul>
+    <a>Terms of Service</a>
+    <a>Privacy Policy</a>
+    <a href="#header"><img src="../images/top.png"></a>
+  </div>
+  <p>&copy; 2021, Mohit Joshi, Bloomfield, NJ 07003</p>
+</footer>
+</body>
+</html>

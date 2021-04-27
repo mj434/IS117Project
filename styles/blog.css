@@ -1,0 +1,29 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.blog {
+    padding: 1em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.blog-header {
+    background-color: black;
+    color: white;
+    width:50%;
+    text-align: center;
+    padding: 0.25em;
+}
+
+.blog-body {
+    font-size: large;
+    text-align: center;
+}

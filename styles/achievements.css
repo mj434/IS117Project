@@ -1,0 +1,14 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5em;
+}
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
